@@ -1,5 +1,6 @@
 version: 1
 project:
+  id: physiome-S000025
   title: >-
     Reproducibility study to simulate a chain of collapsible contracting lymphangions with progressive valve closure
   description: This paper presents a reproduced computational model of lymphatic collecting vessels. The model was originally introduced by Bertram et al. (2011), and comprises a series of contractile segments, known as lymphangions, interconnected by secondary lymphatic valves. The model focused on elucidating the pumping behavior of contracting lymphangions and deriving pump-characteristic curves, by incorporating pressure-dependent valve resistance, passive elasticity, and active contraction terms in multiple lymphangions connected in series.
@@ -66,6 +67,9 @@ project:
   abbreviations:
     IgG: Immunoglobulin G
     mAb: monoclonal antibodies
+    ODE: ordinary differential equation
+    XML: extensible markup language
+    PMR: Physiome Model Repository
 site:
   template: article-theme
   title: >-
