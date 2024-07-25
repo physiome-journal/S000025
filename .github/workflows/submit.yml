@@ -1,0 +1,17 @@
+name: Create Submission from Main
+on:
+  push:
+    branches: ['main']
+permissions:
+  contents: write
+jobs:
+  submit:
+    uses: curvenote/actions/.github/workflows/submit.yml@v1
+    with:
+      id-pattern-regex: '^physiome-(?:[a-zA-Z0-9-_]{3,40})$'
+      venue: physiome
+      collection: articles
+      kind: retrospective # This may also be: original, letter, or review
+    secrets:
+      CURVENOTE: ${{ secrets.CURVENOTE_TOKEN }}
+      GITHUB: ${{ secrets.GITHUB_TOKEN }}
